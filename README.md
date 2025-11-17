@@ -29,7 +29,7 @@ The system captures and processes sensor data, runs inference using a **custom-t
 
 ---
 
-## 🧩 Brief Setup Instructions
+## Brief Setup Instructions
 
 Before running the firmware on your Adafruit Feather Sense, ensure that your Arduino IDE and libraries are properly configured. Remeber to install the Tensorflow Lite Library, Sensor Hardware Library, Bluetooth Library.
 
@@ -39,7 +39,7 @@ Download and install the latest **Arduino IDE** from the [official Arduino websi
 1. Open **Arduino IDE → Preferences**.  
 2. In the *“Additional Boards Manager URLs”* field, add:  
 
-## ⚙️ How It Works
+## How It Works
 
 The project is divided into two main parts:
 
@@ -54,8 +54,8 @@ The C++ firmware on the Adafruit Feather Sense performs the following loop:
 5. **Inference:** Feeds the normalized data into the TFLite model (~11.7 ms inference time).  
 6. **Transmission:** Sends classification probabilities (Jump, Spin, Weave, Null) via BLE.
 
-⏱ **Total Cycle Time:** ~28–30 ms (Sensor Acquisition + Inference + BLE)  
-✅ **Within Real-Time Window:** 528 ms sliding window interval.
+**Total Cycle Time:** ~28–30 ms (Sensor Acquisition + Inference + BLE)  
+**Within Real-Time Window:** 528 ms sliding window interval.
 
 ---
 
